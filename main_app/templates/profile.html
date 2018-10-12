@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ username }}'s Skills:</h1>
+
+{% for skill in skills %}
+<a href="/skills/{{ skill.id }}">
+  <h3>{{ skill.skill }}</h3>
+</a>
+
+{% endfor %}
+{% endblock %}

@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Some page inside the skills folder</h1>
-    <hr />
+    <a href="/skills/create">Add a New Skill</a>
         {% for skill in skills %}
             <div class="card">
                 <a href="{% url 'detail' skill.id %}">
