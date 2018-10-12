@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Dev Skills</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header class="navbar-fixed">Welcome to My Dev Skills
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="right">
+                    <a href="/skills">My Skills</a>
+                </ul>
+            </div>
+            </nav>
+    </header>
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+    
+    <footer>All Rights Reserved 2018</footer>
+</body>
+</html>
